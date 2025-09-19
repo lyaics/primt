@@ -1,50 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PRIMT: Preference-based Reinforcement Learning with Multimodal Feedback and Trajectory Synthesis from Foundation Models</title>
-  <style>
-    body { max-width: 800px; margin: 2rem auto; font-family: Arial, sans-serif; background: #f9f9f9; color: #222; }
-    h1, h2 { color: #005b96; }
-    section { margin-bottom: 2.5rem; padding: 1.5rem; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-    video { width: 100%; max-width: 700px; margin: 1rem 0; border-radius: 6px; background: #222; }
-    .footer { text-align: center; color: #888; font-size: 0.95rem; margin-top: 2rem; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPT: Deformable Patch-based Transformer for Human Motion Prediction</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .hero-banner {
+            background-color: #2c3e50; /* Dark background like in the screenshot */
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .hero-banner h1 {
+            font-size: 2.2em;
+            font-weight: 500;
+            margin: 0 0 15px 0;
+        }
+        .hero-banner .authors {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #ecf0f1;
+        }
+        .hero-banner .conference {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #bdc3c7;
+            margin-bottom: 20px;
+        }
+        .hero-banner .links a {
+            color: #1abc9c; /* A bright color for links on dark background */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .hero-banner .links a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin: 50px 0;
+        }
+        h2 {
+            text-align: center;
+            font-size: 1.8em;
+            font-weight: 400;
+            color: #2c3e50;
+            margin-bottom: 25px;
+        }
+        h3 {
+            text-align: center;
+            font-size: 1.4em;
+            font-weight: 400;
+            margin-top: 40px;
+        }
+        h4 {
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: normal;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1em;
+            text-align: justify;
+        }
+        .caption {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-top: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border: 1px solid #ddd;
+        }
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .results-table th, .results-table td {
+            padding: 8px;
+            text-align: center;
+            vertical-align: top;
+        }
+        .results-table th {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .image-pair {
+            display: flex;
+            justify-content: center;
+            gap: 15px; /* Space between images */
+        }
+        .image-pair img {
+            width: 48%; /* Each image takes up slightly less than half the space */
+            margin: 0;
+        }
+        .bibtex {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            padding: 15px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.9em;
+        }
+        .contact p {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <h1>PRIMT: Preference-based Reinforcement Learning with Multimodal Feedback and Trajectory Synthesis from Foundation Models</h1>
-  <section id="abstract">
-    <h2>Abstract</h2>
-    <p><!-- Add your abstract here -->
-      This is a placeholder for your abstract. Please update this section with the full abstract of your paper.
-    </p>
-  </section>
 
-  <section id="framework-overview">
-    <h2>Framework Overview</h2>
-    <!-- Replace the src with your actual video file (e.g., 'overview.mp4') after uploading -->
-    <video controls poster="video-poster.png">
-      <source src="overview.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <p>Short description of the framework, workflow, or architecture. Replace this text with your own explanation.</p>
-  </section>
+    <div class="hero-banner">
+        <h1>DPT: Deformable Patch-based Transformer for Human Motion Prediction</h1>
+        <div class="authors">
+            Author One, Author Two, Author Three, Author Four
+        </div>
+        <div class="conference">
+            CVPR 2024 (Highlight)
+        </div>
+        <div class="links">
+            <a href="#" target="_blank">Paper</a>
+            <a href="#" target="_blank">Code</a>
+            <a href="#" target="_blank">Project Page</a>
+        </div>
+    </div>
 
-  <section id="experimental-demos">
-    <h2>Experimental Demos</h2>
-    <ul>
-      <li><!-- Add links, images, or descriptions of your demo experiments here --></li>
-    </ul>
-  </section>
+    <div class="container">
 
-  <section id="real-world-deployment">
-    <h2>Real-world Deployment</h2>
-    <p><!-- Add information, photos, or video of real-world deployment here --></p>
-  </section>
+        <section id="abstract">
+            <h2>Abstract</h2>
+            <p>
+                This is the placeholder for your abstract. Based on the screenshot, it should be a well-written paragraph summarizing the core contributions of DPT. Explain the problem of human motion prediction, the limitations of existing methods, and how your deformable patch-based Transformer approach addresses these challenges to achieve state-of-the-art results.
+            </p>
+        </section>
 
-  <div class="footer">
-    &copy; 2025 PRIMT Authors | <a href="https://github.com/lyaics/PRIMT-website">GitHub Repo</a>
-  </div>
+        <section id="method">
+            <h2>Proposed Method</h2>
+            <img src="assets/method_overview.gif" alt="Diagram of the DPT method">
+            <p class="caption">
+                An overview of our Deformable Patch-based Transformer (DPT) architecture for human motion prediction.
+            </p>
+        </section>
+
+        <section id="results">
+            <h2>Qualitative Results</h2>
+
+            <h3>Human3.6M</h3>
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>Input</th>
+                        <th>Ground Truth</th>
+                        <th>DPT (Ours)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="assets/h36m_input.gif" alt="Human3.6M Input"></td>
+                        <td><img src="assets/h36m_gt.gif" alt="Human3.6M Ground Truth"></td>
+                        <td><img src="assets/h36m_ours.gif" alt="Human3.6M DPT Result"></td>
+                    </tr>
+                    </tbody>
+            </table>
+
+            <h3>AMASS</h3>
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>Input</th>
+                        <th>Ground Truth</th>
+                        <th>DPT (Ours)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="assets/amass_input.gif" alt="AMASS Input"></td>
+                        <td><img src="assets/amass_gt.gif" alt="AMASS Ground Truth"></td>
+                        <td><img src="assets/amass_ours.gif" alt="AMASS DPT Result"></td>
+                    </tr>
+                    </tbody>
+            </table>
+
+            <h3>Transition Stage</h3>
+            <div class="image-pair" style="margin-top: 20px;">
+                <div>
+                    <h4>Phase 1</h4>
+                    <img src="assets/phase1_a.gif" alt="Phase 1 Example A">
+                </div>
+                <div>
+                    <h4>Phase 2</h4>
+                    <img src="assets/phase2_a.gif" alt="Phase 2 Example A">
+                </div>
+            </div>
+
+            <div class="image-pair" style="margin-top: 20px;">
+                <div>
+                    <h4>Phase 3</h4>
+                    <img src="assets/phase3_a.gif" alt="Phase 3 Example A">
+                </div>
+                <div>
+                    <h4>Phase 4</h4>
+                    <img src="assets/phase4_a.gif" alt="Phase 4 Example A">
+                </div>
+            </div>
+
+            <div class="image-pair" style="margin-top: 20px;">
+                <div>
+                    <h4>Phase 5</h4>
+                    <img src="assets/phase5_a.gif" alt="Phase 5 Example A">
+                </div>
+                <div>
+                    <h4>Phase 6</h4>
+                    <img src="assets/phase6_a.gif" alt="Phase 6 Example A">
+                </div>
+            </div>
+
+        </section>
+
+        <section id="citation">
+            <h2>BibTeX</h2>
+            <pre class="bibtex"><code>@inproceedings{author2024dpt,
+    title     = {DPT: Deformable Patch-based Transformer for Human Motion Prediction},
+    author    = {Author, One and Author, Two and Author, Three and Author, Four},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year      = {2024}
+}</code></pre>
+        </section>
+
+        <section id="acknowledgements">
+            <h2>Acknowledgements</h2>
+            <p>
+                This section is for your acknowledgements. Mention any funding sources, institutions, or individuals you wish to thank for their support and contributions to this research.
+            </p>
+        </section>
+        
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>
+                For any questions, please contact author@email.com.
+            </p>
+        </section>
+
+    </div>
+
 </body>
 </html>
